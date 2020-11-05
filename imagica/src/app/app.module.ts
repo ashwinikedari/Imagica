@@ -5,17 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostImageComponent } from './post-image/post-image.component';
 import {
-  MatInputModule,
-  MatCardModule,
-  MatButtonModule,
-  MatToolbarModule,
-  
-} from "@angular/material";
+  MatInputModule
+
+} from "@angular/material/input";
+import {
+
+  MatToolbarModule
+
+} from "@angular/material/toolbar";
+import {
+
+  MatCardModule
+
+} from "@angular/material/card";
+import {
+
+  MatButtonModule
+
+
+} from "@angular/material/button";
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppServiceService } from './app-service.service';
 import { ListImageComponent } from './list-image/list-image.component';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -31,15 +46,16 @@ import { HeaderComponent } from './header/header.component';
     ReactiveFormsModule,
     MatCardModule,
     HttpClientModule,
-    MatToolbarModule
-    
+    MatToolbarModule,
+    BrowserAnimationsModule
+
   ],
   exports: [
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-  MatToolbarModule
-    
+    MatToolbarModule
+
   ],
   providers: [AppServiceService],
   bootstrap: [AppComponent]
