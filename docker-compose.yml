@@ -14,13 +14,15 @@ services:
       - 27017:27017
 
   node:
+    container_name: imagica_node
     build: myapp
     ports:
       - 3000:3000
     links:
       - database
    
-  node:
+  imagica:
+    container_name: imagica_angular
     build: imagica
     ports:
       - 4200:4200
