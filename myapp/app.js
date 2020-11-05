@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 var routes = require('./routes');
 app.use('/api', routes);
 
-app.use("/", express.static(path.join(__dirname, "dist/imagica/")));
+// app.use("/", express.static(path.join(__dirname, "dist/imagica/"))); //commented as need to expose angular app on seperate port
 
 
 // Send all other requests to the Angular app
