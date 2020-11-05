@@ -2,7 +2,7 @@ version: '3'
 services:
   database:
     image: mongo:latest
-    container_name: my_mongo_container
+    container_name: imagica_mongo
     environment: 
       - MONGO_INITDB_DATABASE=imagica
       - MONGO_INITDB_ROOT_USERNAME=Ashwini_Kedari
